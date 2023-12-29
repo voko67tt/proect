@@ -1,0 +1,432 @@
+body {
+    display: flex; /* Встановлюємо режим відображення Flexbox */
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #826443;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.slider {
+    margin-bottom: 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #221e18;
+}
+
+.slider-container img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+footer {
+    background-color: #a99279;
+    color: rgb(19, 16, 16);
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.container2 {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.client-photos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-photo {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.client-photo img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer-icons {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.footer-icons a {
+    margin-right: 30px;
+    color: #333;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+h1 {
+    animation: fadeInOut 3s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.working-hours {
+    animation: blink 2s infinite;
+}
+
+h1 {
+    text-align: center;
+}
+
+#loginForm, #registrationForm {
+    display: block;
+}
+
+#loginForm label, #registrationForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#registrationForm input[type="email"],
+#registrationForm input[type="password"],
+#registrationForm input[type="text"],
+#registrationForm input[type="date"],
+#registrationForm select,
+#registrationForm input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #5c4a4a;
+    border-radius: 5px;
+}
+
+#loginForm button, #registrationForm button {
+    padding: 30px 60px;
+    margin-right: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    border-radius: 40px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(140, 96, 96, 0.7);
+}
+
+.modal-content {
+    background-color: #c06a6a;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+
+.top-right-buttons button {
+    padding: 5px 10px; 
+    margin-right: 10px;
+    background-color: transparent;
+    color: #000000a1;
+    border: 2px solid #070a0d;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+.top-right-buttons button:hover {
+    background-color: #c3b2b61f;
+    color: white;
+}
+
+#registrationModal .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registrationModal .modal-content input,
+#registrationModal .modal-content select,
+#registrationModal .modal-content button {
+    margin: 5px -10px;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .top-right-buttons {
+        position: relative; 
+        top: auto; 
+        right: auto; 
+        margin-top: 10px; 
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  
+  .chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 20px;
+    width: 100%; 
+  }
+  
+  .chat-box {
+    width: 100%;
+    display: flex;
+  }
+  
+  user-panel {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin: 10px;
+  }
+  
+  message-panel {
+    width: 70%;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px;
+  }
+  #ukrainianText, #transliteratedText {
+    font-size: 3.2rem; 
+}
+
+#birthDate, #calculateButton, #result {
+    font-size: 1.5rem; 
+}
+.container label, .container input, .container p {
+    font-size: 1.5rem; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.chat-box {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+.user-panel {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+.message-panel {
+  width: 70%;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white; 
+}
+h2 {
+  margin: 0;
+}
+input[type="text"] {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.user1-message {
+  background-color: #f0f0f0; 
+  color: #000;
+  align-self: flex-start;
+}
+.user2-message {
+  background-color: #f0f0f0; 
+  color: #000;
+  align-self: flex-end;
+}
+.radio-group {
+    display: flex; 
+}
+
+.radio-group label {
+    margin-right: 10px; 
+#buttonContainer {
+    position: fixed;
+    top: 640px; 
+    right: 500px; 
+    width: 300px; 
+    white-space: nowrap; 
+  }}
+  
+  #deleteSelected, #duplicateSelected {
+    width: 140px; 
+    height: 30px;
+    
+  }
+.error{
+    color: rgb(13, 236, 9); 
+
+}
+.registration-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none; 
+    background-color: #007bff; 
+    color: #fff; 
+    border-radius: 5px; 
+    cursor: pointer;
+  }
+
+.modal-table {
+    overflow-x: auto; 
+}
+
+table {
+    width: 25%; 
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    color: rgb(13, 236, 9); 
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px; 
+    }
+
+    th, td {
+        padding: 5px; 
+    }
+}
+@media (max-width: 480px) {
+}

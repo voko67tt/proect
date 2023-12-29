@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наш РЕСТОРАНЧИК</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+  
+</head><style>table {
+    
+            margin: 0 auto; 
+        
+    border-collapse: collapse; 
+    width: 50%; 
+}
+
+th {
+    padding: 40px; 
+    width: 10px; 
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+td {
+    padding: -30px; 
+    width: 5px; 
+    
+}
+</style>
+
+<body>
+    <header>
+        <h1>Вітаємо на сайті нашого ресторану</h1>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Меню</a></li>
+
+
+
+            </ul>
+        </nav>
+        <div class="top-right-buttons">
+            <button id="registerBtn" >Зареєструватись</button>
+        </div>
+        <script>
+            document.getElementById('registerBtn').addEventListener('click', function() {
+                window.location.href = 'index.php';
+            });
+        </script>
+    </header>
+    
+    <main class="container">
+        <section class="column">
+            <h2>Смачні страви у нашому ресторані</h2>
+            <div class="slider-container">
+                <div><img src="image/борщик.jpg" alt="Фото страви 1"></div>
+                <div><img src="image/варенички.jpg" alt="Фото страви 2"></div>
+                <div><img src="image/сальце.jpg" alt="Фото страви 3"></div>
+            </div>
+        </section>
+        <section class="column">
+            <h2>Де ми знаходимось:</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.244464762334!2d-122.40700398525839!3d37.78799417975498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580d336df703b%3A0x8f44ee75a1704c21!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1608724163245!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section class="column">
+            <h2 class="working-hours">Графік роботи</h2>
+            <p>Понеділок - П'ятниця: 10:00 - 22:00</p>
+            <p>Субота - Неділя: 11:00 - 23:00</p>
+        </section>
+        <section class="column">
+            <h2>Наші клієнти</h2>
+            <div class="client-photos">
+                <div class="client-photo">
+                    <img src="image/2client.jfif" alt="Клієнт 1">
+                </div>
+                <div class="client-photo">
+                    <img src="image/клієнт2.jpg" alt="Клієнт 2">
+                </div>
+                <div class="client-photo">
+                    <img src="image/1клієнт.jpg" alt="Клієнт 3">
+                </div>
+            </div>
+        </section>
+        <div style="clear:both;"></div>
+    </main>
+    <footer>
+        <div class="footer-icons">
+            <a href="tel:+380967282955"><i class="fas fa-phone"></i> </a>
+            <a href="mailto:palinira697@gmail.com"><i class="fas fa-envelope"></i> </a>
+            <a href="https://t.me/palinira4292"><i class="fab fa-telegram"></i> </a>
+            <a href="https://wa.me/380967282955"><i class="fab fa-whatsapp"></i> </a>
+        </div>
+        <p>&copy; 2023 Назва Вашого Ресторану. Всі права захищені.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider-container').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="D:\Лаби по вебу\lab7\App\src\App.vue"></script>
+<script src="login.js"></script>
+</body>
+</html>

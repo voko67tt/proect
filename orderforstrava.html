@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form action="ordercon.php" method="post">
+        <h2>Форма замовлення</h2>
+        <select name="table_number" required>
+            <option value="1">Столик 1</option>
+            <option value="2">Столик 2</option>
+            <option value="3">Столик 3</option>
+            <option value="4">Столик 4</option>
+            <option value="5">Столик 5</option>
+            <option value="6">Столик 6</option>
+            <option value="7">Столик 7</option>
+        </select>
+        <input type="text" name="customer_name" placeholder="Ваше ім'я" required>
+        <input type="number" name="quantity" placeholder="Кількість порцій" required>
+        <input type="submit" value="Замовити">
+    </form>
+</body>
+</html>
